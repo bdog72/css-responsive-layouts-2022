@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .header-text {
@@ -21,8 +22,10 @@ ul {
   padding: 1rem;
   text-align: center;
   list-style-type: none;
-  max-width: 600px;
-  min-width: 400px;
+  /* max-width: 600px;
+  min-width: 375px; */
+  width: 375px;
+  margin: 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: #fff;
