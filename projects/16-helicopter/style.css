@@ -18,3 +18,30 @@ body {
   display: grid;
   place-items: center;
 }
+
+.container {
+  width: 150rem;
+  height: 80rem;
+  background-color: rgb(88, 179, 253);
+  display: grid;
+  place-items: center;
+}
+
+.helicopter {
+  width: 80rem;
+  height: 60rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.helicopter div {
+  position: absolute;
+}
+
+.blade {
+  width: 40rem;
+  height: 2rem;
+  background-color: #000;
+  top: 15rem;
+  left: 20rem;
+}
