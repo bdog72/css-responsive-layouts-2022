@@ -19,16 +19,30 @@ body {
   perspective: 1000px;
 }
 
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
 .card {
   width: 550px;
   height: 300px;
   background-color: #fff;
   transform-style: preserve-3d;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  transition: transform 1s;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: inherit;
 }
 
 .card-front {
-  width: 100%;
-  height: 100%;
   display: flex;
   background: linear-gradient(
     100deg,
@@ -104,4 +118,18 @@ body {
 
 .address {
   padding-left: 10px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back img {
+  width: 40%;
 }
