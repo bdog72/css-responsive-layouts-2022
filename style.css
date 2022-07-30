@@ -4,3 +4,26 @@
 * {
   font-family: sans-serif;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 3rem;
+}
+
+li a {
+  text-decoration: none;
+}
