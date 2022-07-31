@@ -11,6 +11,7 @@ html {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -22,6 +23,7 @@ ul {
 
 li {
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 li a {
