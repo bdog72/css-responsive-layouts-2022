@@ -1,0 +1,23 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ -- recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdog72/JavaScript-Projects-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdog72/JavaScript-Projects-2022/issues"
+  },
+  "homepage": "https://github.com/bdog72/JavaScript-Projects-2022#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
