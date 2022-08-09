@@ -1,31 +1,14 @@
 /*  */
 /*  */
 
-* {
+/* * {
   font-family: sans-serif;
 }
 
 html {
   font-size: 62.5%;
-}
+} */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
-li a {
-  text-decoration: none;
+body {
+  font-family: 'Staatliches', cursive;
 }
