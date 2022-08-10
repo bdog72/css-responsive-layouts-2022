@@ -1,10 +1,17 @@
 //
 //
 
-$color: red;
-$color: blue;
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: 'Staatliches', cursive;
-  background: $color;
+  font-family: $font-stack;
+  background: $light-color;
+  color: $dark-color;
+  color: $dark-color;
+  line-height: 1.5;
 }
