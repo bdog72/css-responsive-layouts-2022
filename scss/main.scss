@@ -1,7 +1,37 @@
 //
 //
 
-h1 {
-  color: blue;
-  color: orange;
+@import 'config';
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  background-image: $bg-image;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
 }
