@@ -2,6 +2,7 @@
 //
 
 @import 'config';
+@import 'utilities';
 
 // General Styles
 * {
@@ -13,7 +14,6 @@ body {
   font-family: 'dosis', sans-serif;
   line-height: 1.6;
   background: #fff;
-  background-image: $bg-image;
 }
 
 a {
@@ -34,4 +34,25 @@ h4 {
 
 img {
   width: 100%;
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+// Main Nav
+
+// Header
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+  }
+
+  &-inner {
+  }
 }
