@@ -23,3 +23,7 @@ body {
   min-height: 100vh;
   padding: 50px;
 }
+
+img {
+  width: 200px;
+}
