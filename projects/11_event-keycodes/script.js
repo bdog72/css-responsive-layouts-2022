@@ -1,4 +1,24 @@
 //
 //
 
-console.log('KeyCodes');
+// const eKey = document.querySelector('.eventKey');
+const insert = document.querySelector('#insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+    <div class="key">
+      ${e.key === ' ' ? 'Space' : e.key}
+      <small class="eventKey">event.key</small>
+    </div>
+
+    <div class="key">
+      ${e.keyCode}
+      <small>event.keyCode</small>
+    </div>
+
+    <div class="key">
+      ${e.code}
+      <small>event.code</small>
+    </div>
+  `;
+});
