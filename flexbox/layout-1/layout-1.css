@@ -49,3 +49,9 @@ body {
 .blog-posts__post--description {
   font-size: 1.5rem;
 }
+
+@media (max-width: 700px) {
+  .blog-posts {
+    flex-direction: column;
+  }
+}
