@@ -67,6 +67,8 @@ input {
   }
 
   nav {
+    order: -1;
+    order: 0;
     order: 1;
     flex: 100%;
   }
