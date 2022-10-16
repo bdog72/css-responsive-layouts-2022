@@ -19,4 +19,16 @@
 
 :root {
   font-size: 62.5%;
+
+  /*----------*----------*---------- Website Theme */
+  --color-primary: hsl(0, 0%, 100%);
+
+  --color-secondary: hsl(0, 0%, 11%);
+  --color-secondary-m: hsl(0, 0%, 11%, 0.4);
+
+  --color-tertiary: hsl(0, 0%, 17%);
+  --color-quarternary: hsl(0, 1%, 50%);
+
+  /*----------*----------*---------- Padding */
+  --padding-d-l-h: calc(2rem + 12vw);
 }
