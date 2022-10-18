@@ -1,12 +1,11 @@
 /*  */
 /*  */
 
-/*----------*----------*---------- Fonts */
+/*----------*----------*----------*----------*---------- Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
-/*----------*----------*---------- Reset */
-
+/*----------*----------*----------*----------*---------- Reset */
 *,
 *::before,
 *::after {
@@ -15,33 +14,34 @@
   box-sizing: border-box;
 }
 
-/*----------*----------*---------- General Styles */
-
+/*----------*----------*----------*----------*---------- General Styles */
 :root {
   font-size: 62.5%;
 
-  /*----------*----------*---------- Website Theme */
+  /*----------*----------*----------* Website Theme */
   --color-primary: hsl(0, 0%, 100%);
 
   --color-secondary: hsl(0, 0%, 11%);
-  --color-secondary-m: hsl(0, 0%, 11%, 0.4);
+  --color-secondary-m: hsla(0, 0%, 11%, 0.4);
 
   --color-tertiary: hsl(0, 0%, 17%);
-  --color-quarternary: hsl(0, 1%, 50%);
+  --color-quaternary: hsl(0, 1%, 50%);
 
-  /*----------*----------*---------- Padding */
+  /*----------*----------*----------* Padding */
   /* 
-          --------------------- Sizing Nature
+        --------------------- Sizing Nature
         d     = dynamic
         st    = static
 
         --------------------- Sizing
+
         l     = large
         m     = medium
         s     = small
         xs    = extra small
         c     = customized
 
+          
         --------------------- Orientation
         v  = vertical   (top & bottom)
         h  = horizontal (right & left)
@@ -113,8 +113,8 @@
 }
 
 body {
-  font-family: var(--font-family-title);
   background-color: var(--color-primary);
+  font-family: var(--font-family-content);
   line-height: 1.6;
 }
 
@@ -126,3 +126,45 @@ a {
 li {
   list-style: none;
 }
+
+img {
+  width: 250px;
+  height: 200px;
+}
+
+/*----------*----------*----------*----------*---------- Utility Classes */
+
+/*----------*----------*----------* Section Padding */
+.section__padding {
+  padding: var(--padding-d-l-v) var(--padding-d-l-h);
+}
+
+/*----------*----------*----------* Section Title */
+.section__title {
+  font-size: var(--font-size-d-sc);
+  font-weight: 900;
+}
+
+/*----------*----------*----------* Section Para */
+.section__para {
+  font-size: var(--font-size-st-sc);
+  color: var(--color-quaternary);
+}
+
+/*----------*----------*----------*----------*---------- Overall Layout */
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [container-start] repeat(12, minmax(min-content, 12.5rem))
+    [container-end];
+
+  grid-template-rows: repeat(9, min-content);
+  justify-content: center;
+}
+
+.overall-layout {
+  grid-column: container-start / container-end;
+}
+
+/*----------*----------*----------*----------*---------- Header */
